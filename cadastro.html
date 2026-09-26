@@ -1,0 +1,165 @@
+
+    <!-- NOVO MODELO DO CADASTRO -->
+    <!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Fonte Google Fonts para um visual moderno -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Certifica-te de que o ficheiro style.css está exatamente na mesma pasta -->
+    <link rel="stylesheet" href="style.css">
+    <title>Quero Ajudar - Instituto Patinhas Unidas</title>
+</head>
+<body>
+
+    <header id="inicio">
+        <h1>Instituto Patinhas Unidas</h1>
+    </header>
+
+    <nav class="menu-navegação">
+        <input type="checkbox" id="menu-toggle">
+        <label for="menu-toggle" class="botao-menu">☰</label>
+        <ul>
+            <li><a href="index.html" class="botao">Início</a></li>
+            <li><a href="projetos.html" class="botao">Projetos</a></li>
+            <li><a href="cadastro.html" class="botao">Quero ajudar</a></li>
+            <li><a href="#contato" class="botao">Contato</a></li>
+        </ul>
+    </nav>
+
+    <main class="tela-principal">
+        <div class="cabecalho-pagina">
+            <h2>Quero Fazer a Diferença</h2>
+            <p>Preencha o formulário abaixo para se voluntariar ou fazer uma doação para os nossos patudos.</p>
+        </div>
+
+        <div class="cadastro-container">
+            
+            <!-- CARTÃO INFORMATIVO -->
+            <div class="card-info-cadastro">
+                <h3>Como ajudar?</h3>
+                <p>O teu apoio garante comida, medicação e abrigo para mais de 300 cães e gatos resgatados.</p>
+                
+                <ul class="lista-beneficios">
+                    <li><strong>Voluntariado:</strong> Ajuda nas feiras de adoção e no cuidado diário.</li>
+                    <li><strong>Doações:</strong> Alimentos, medicamentos ou contribuições financeiras.</li>
+                    <li><strong>Lar Temporário:</strong> Acolhe um animal durante a sua recuperação.</li>
+                </ul>
+
+                <div class="card-destaque-interno">
+                    <h4>Quer participar das nossas ações?</h4>
+                    <p>Confira como funciona a participação e envie seu cadastro para nossa equipe.</p>
+                    <label for="modal-cadastro" class="botao">Ver Detalhes</label>
+                </div>
+            </div>
+
+            <!-- FORMULÁRIO ESTILIZADO -->
+            <!-- FORMULÁRIO COM VALIDAÇÃO NATIVA -->
+<form class="form-cadastro" action="#sucesso">
+    <h3>Formulário de Cadastro</h3>
+    <div class="grupo-campo">
+    <label for="nome">Nome Completo *</label>
+    <input type="text" id="nome" name="nome" placeholder="Digite o seu nome completo" required>
+    <span class="mensagem-erro">Por favor, preencha o seu nome completo.</span>
+</div>
+
+<div class="grupo-campo">
+    <label for="email">E-mail *</label>
+    <input type="email" id="email" name="email" placeholder="seuemail@exemplo.com" required>
+    <span class="mensagem-erro">Insira um endereço de e-mail válido (ex: nome@dominio.com).</span>
+</div>
+
+
+    <div class="grupo-campo">
+        <label for="telefone">Telefone / WhatsApp *</label>
+        <input type="tel" id="telefone" name="telefone" placeholder="(11) 99999-9999" required
+        maxlength="11">
+
+    </div>
+
+    <div class="grupo-campo">
+        <label for="tipo-ajuda">Como deseja ajudar? *</label>
+        <select id="tipo-ajuda" name="tipo-ajuda" required>
+            <option value="" disabled selected>Selecione uma opção...</option>
+            <option value="voluntario">Quero ser Voluntário</option>
+            <option value="doador">Quero fazer Doações</option>
+            <option value="lar-temporario">Quero oferecer Lar Temporário</option>
+            <option value="adocao">Quero Adotar um Animal</option>
+        </select>
+    
+
+
+    <!-- Botão Submit real que valida os campos obrigatórios -->
+    <button type="submit" class="botao botao-enviar">Enviar Cadastro</button>
+</form>
+
+<!-- NOTIFICAÇÃO / MODAL DE SUCESSO EXIBIDO VIA HASH (#sucesso) -->
+<div id="sucesso" class="modal-container-hash">
+    <div class="modal-conteudo modal-sucesso-conteudo">
+        <a href="#" class="modal-fechar">&times;</a>
+        <div class="icone-sucesso">✓</div>
+        <h3>Cadastro Realizado com Sucesso!</h3>
+        <p>Obrigado pelo seu apoio ao Instituto Patinhas Unidas. Entraremos em contato em breve pelo WhatsApp ou e-mail fornecido.</p>
+        <a href="#" class="botao">Concluir</a>
+    </div>
+</div>
+
+        <!-- MODAL DE INFORMAÇÕES -->
+        <input type="checkbox" id="modal-cadastro" class="modal-checkbox">
+        <div class="modal-container">
+            <div class="modal-conteudo">
+                <label for="modal-cadastro" class="modal-fechar">&times;</label>
+                <h3>Informações sobre a participação</h3>
+                <p>A nossa equipe entrará em contato dentro do prazo de 24 a 48 horas após o envio do formulário para alinhar os detalhes da sua participação!</p>
+                <label for="modal-cadastro" class="botao">Entendido</label>
+            </div>
+        </div>
+
+        <!-- MODAL DE SUCESSO DO CADASTRO -->
+        <input type="checkbox" id="modal-sucesso" class="modal-checkbox">
+        <div class="modal-container">
+            <div class="modal-conteudo modal-sucesso-conteudo">
+                <label for="modal-sucesso" class="modal-fechar">&times;</label>
+                <div class="icone-sucesso">✓</div>
+                <h3>Cadastro Realizado com Sucesso!</h3>
+                <p>Obrigado pelo teu apoio ao Instituto Patinhas Unidas. Entraremos em contacto em breve pelo WhatsApp ou e-mail fornecido.</p>
+                <label for="modal-sucesso" class="botao">Concluir</label>
+            </div>
+        </div>
+
+    </main>
+
+
+    <!-- RODAPÉ -->
+    <footer class="rodape" id="contato">
+        <div class="rodape-conteudo">
+            <div class="rodape-coluna">
+                <h3>Instituto Patinhas Unidas</h3>
+                <p>Desde 2014 resgatando, cuidando e encontrando novos lares para cães e gatos em situação de vulnerabilidade.</p>
+            </div>
+
+            <div class="rodape-coluna">
+                <h3>Fale conosco</h3>
+                <p class="italico">Rua Floriano Peixoto, 142 — Centro, Mogi das Cruzes/SP</p>
+                <p class="italico">(11) 99999-9999</p>
+                <p class="italico">contato@patinhasunidas.org</p>
+            </div>
+
+            <div class="rodape-coluna">
+                <h3>Atendimento</h3>
+                <p>Segunda a sexta, 7h às 18h</p>
+                <p>Feiras de adoção: sábados, 8h às 14h</p>
+            </div>
+        </div>
+
+        <div class="rodape-bottom">
+            <p>&copy; 2026 Instituto Patinhas Unidas. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Projetos - Instituto Patinhas Unidas</title>
+</head>
+<body>
+
+    <header id="inicio">
+        <h1>Instituto Patinhas Unidas</h1>
+    </header>
+
+    <nav class="menu-navegação">
+        <input type="checkbox" id="menu-toggle">
+        <label for="menu-toggle" class="botao-menu">☰</label>
+        <ul>
+            <li><a href="index.html" class="botao">Início</a></li>
+            <li><a href="projetos.html" class="botao">Projetos</a></li>
+            <li><a href="cadastro.html" class="botao">Quero ajudar</a></li>
+            <li><a href="#contato" class="botao">Contato</a></li>
+        </ul>
+    </nav>
+
+    <main class="tela-principal">
+        <div class="cabecalho-pagina">
+        <section class="cabecalho-pagina">
+            <h2>Nossos projetos</h2>  
+            <p>
+                O Instituto Patinhas Unidas desenvolve projetos voltados para
+                a proteção, recuperação e adoção de cães e gatos em situação
+                de abandono.
+            </p>
+        </section>
+
+        <!-- GRID COM OS CARDS LADO A LADO -->
+        <div class="projetos-grid">
+            
+            <!-- CARD 1 -->
+            <article class="card-projeto">
+                <img src="imagens/cachorro-sendo-resgatado.jpg" alt="Cachorro sendo resgatado">
+                <div class="card-conteudo">
+                    <h3>Resgate e recuperação</h3>
+                    <p>
+                        O projeto tem como objetivo resgatar animais encontrados
+                        em situação de risco ou abandono e oferecer os cuidados
+                        necessários para sua recuperação.
+                    </p>
+                    <label for="modal-resgate" class="botao">Ver Detalhes</label>
+                </div>
+            </article>
+
+            <!-- CARD 2 -->
+            <article class="card-projeto">
+                <img src="imagens/cachorro-recebendo-carinho.jpg" alt="Cachorro recebendo carinho">
+                <div class="card-conteudo">
+                    <h3>Adoção responsável</h3>
+                    <p>
+                        Após a recuperação, os animais são preparados para encontrar
+                        um novo lar com famílias que ofereçam atenção e carinho.
+                    </p>
+                    <label for="modal-adocao" class="botao">Ver Detalhes</label>
+                </div>
+            </article>
+
+            <!-- CARD 3 -->
+            <article class="card-projeto">
+                <img src="imagens/ajude-um-animal.png" alt="Cachorro sendo adotado">
+                <div class="card-conteudo">
+                    <h3>Campanhas de doação</h3>
+                    <p>
+                        As campanhas arrecadam recursos e materiais necessários para
+                        manter os cuidados diários com os animais no abrigo.
+                    </p>
+                    <a href="cadastro.html" class="botao">Quero Doar</a>
+                </div>
+            </article>
+
+        </div>
+</main>
+        <!-- ESTRUTURA DOS MODAIS SEM JAVASCRIPT -->
+        <input type="checkbox" id="modal-resgate" class="modal-checkbox">
+        <div class="modal-container">
+            <div class="modal-conteudo">
+                <label for="modal-resgate" class="modal-fechar">&times;</label>
+                <h3>Resgate e recuperação</h3>
+                <p>Nossa equipe faz plantões semanais para resgate de animais feridos. Atualmente atendemos mais de 20 chamados por mês.</p>
+                <a href="cadastro.html" class="botao">Seja Voluntário</a>
+            </div>
+        </div>
+
+        <input type="checkbox" id="modal-adocao" class="modal-checkbox">
+        <div class="modal-container">
+            <div class="modal-conteudo">
+                <label for="modal-adocao" class="modal-fechar">&times;</label>
+                <h3>Feira de Adoção Responsável</h3>
+                <p>Todos os sábados abrimos nossa sede para visitas. Todos os animais são vacinados e castrados.</p>
+                <a href="cadastro.html" class="botao">Quero Adotar</a>
+            </div>
+        </div>
+
+    </main>
+
+    <!-- RODAPÉ -->
+    <footer class="rodape" id="contato">
+        <div class="rodape-conteudo">
+            <div class="rodape-coluna">
+                <h3>Instituto Patinhas Unidas</h3>
+                <p>Desde 2014 resgatando, cuidando e encontrando novos lares para cães e gatos em situação de vulnerabilidade.</p>
+            </div>
+
+            <div class="rodape-coluna">
+                <h3>Fale conosco</h3>
+                <p class="italico">Rua Floriano Peixoto, 142 — Centro, Mogi das Cruzes/SP</p>
+                <p class="italico">(11) 99999-9999</p>
+                <p class="italico">contato@patinhasunidas.org</p>
+            </div>
+
+            <div class="rodape-coluna">
+                <h3>Atendimento</h3>
+                <p>Segunda a sexta, 7h às 18h</p>
+                <p>Feiras de adoção: sábados, 8h às 14h</p>
+            </div>
+        </div>
+
+        <div class="rodape-bottom">
+            <p>&copy; 2026 Instituto Patinhas Unidas. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+</body>
+</html>

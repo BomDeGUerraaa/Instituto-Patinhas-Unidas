@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="pt-br">	
+<head>	
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Instituto Patinhas Unidas</title>	
+    <script src="script.js"></script>
+</head>
+<body>
+    <header id="inicio"> 
+        <h1>Instituto Patinhas Unidas</h1>
+    </header>
+
+    <nav class="menu-navegação">
+        <input type="checkbox" id="menu-toggle">
+        <label for="menu-toggle" class="botao-menu">☰</label>
+        <ul>
+            <li><a href="#inicio" class="botao">Início</a></li>
+            <li><a href="#sobre" class="botao">Sobre o Instituto</a></li>
+            <li class="menu-dropdown">
+                <a href="projetos.html" class="botao">Projetos</a>
+                <ul class="submenu">
+                    <li><a href="projetos.html">Nossos projetos</a></li>
+                    <li><a href="#impacto">Nosso impacto</a></li>
+                </ul>
+            </li>
+            <li><a href="cadastro.html" class="botao">Quero ajudar</a></li>
+            <li><a href="#contato" class="botao">Contato</a></li>
+        </ul>
+    </nav>
+
+    <main class="tela-principal"> 
+        <!-- SEÇÃO HERO (Destaque Principal) -->
+        <section class="hero">
+            <div class="hero-texto">
+                <span class="badge-destaque">Instituto Patinhas Unidas</span>
+                <h1>Toda vida importa</h1>
+                <p>
+                    Desde 2014 resgatando, cuidando e encontrando novos lares para cães e gatos em situação de vulnerabilidade.
+                </p>
+                <div class="botoes">
+                    <a href="cadastro.html" class="botao">Quero ajudar</a>
+                    <a href="#sobre" class="botao botao-secundario">Conhecer o Instituto</a>
+                </div>
+            </div>
+            <div class="hero-imagem">
+                <img class="cachorro-cabeça-de-lado" src="imagens/cachorro-cabeça-de-lado.jpg" alt="Cachorro resgatado feliz olhando de lado">
+            </div>
+        </section>
+
+        <!-- SEÇÃO SOBRE -->
+        <section id="sobre">
+            <h2>O Instituto Patinhas Unidas</h2>
+            <p>
+                O Instituto Patinhas Unidas foi fundado em março de 2014, a partir da união de um grupo de amigos com o propósito de cuidar, proteger e adotar cada animal em estado de vulnerabilidade. Atuamos principalmente no resgate de animais feridos ou em situação de risco, recuperação e adoção. Mantemos um abrigo com cerca de 300 animais, entre cães e gatos, todos resgatados das ruas, onde eles são protegidos, tratados, alimentados e aguardam pela chance de serem adotados.
+            </p>
+        </section>
+
+        <section id="quem-somos">
+            <h2>Quem somos</h2>
+            <p> 
+                Somos uma organização dedicada à proteção e ao bem-estar de cães e gatos em situação de abandono. Nosso trabalho envolve o resgate, tratamento, alimentação e cuidado dos animais até que eles encontrem um novo lar.
+            </p>
+        </section>
+
+        <section id="missao">
+            <h2>Nossa missão</h2>
+            <p>
+                Nossa missão é proteger animais em situação de abandono, oferecer os cuidados necessários e ajudar cada um deles a encontrar um novo lar.
+            </p>
+        </section>
+
+        <section id="resgate">
+            <h2>Como funciona o resgate</h2>
+            <p>Resgate: o animal é retirado de uma situação de risco.</p>
+            <p>Cuidados: recebe alimentação, atendimento e os cuidados necessários.</p>
+            <p>Recuperação: o animal passa pelo período necessário para se recuperar.</p>
+            <p>Adoção: depois de recuperado, ele pode encontrar um novo lar.</p>
+        </section>
+
+        <section id="numeros">
+            <h2>O Instituto em números</h2>
+            <div class="cards">
+                <div class="card">
+                    <h3>2014</h3>
+                    <p>Ano de fundação do Instituto.</p>
+                </div>
+                <div class="card">
+                    <h3>300</h3>
+                    <p>Animais atualmente acolhidos no abrigo.</p>
+                </div>
+                <div class="card">
+                    <h3>Cães e gatos</h3>
+                    <p>Animais atendidos pelo Instituto.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="impacto">
+            <h2>Por que fazer doações</h2>
+            <p>
+                As doações ajudam a manter o abrigo e garantir alimentação, medicamentos, cuidados veterinários e outros recursos necessários para cuidar dos animais resgatados.
+            </p>
+        </section>
+
+        <section id="doações">
+            <h2>Veja como sua doação faz a diferença</h2>
+            <p>
+                Cada doação contribui para que os animais resgatados recebam os cuidados necessários durante sua recuperação e tenham mais oportunidades de encontrar um novo lar.
+            </p>
+        </section>
+
+        <!-- SEÇÃO QUERO AJUDAR & CAMPANHA -->
+        <section id="quero-ajudar"> 
+            <h2>Ajude um animal hoje</h2>
+            <p>
+                Você pode fazer a diferença na vida de um animal. Faça uma doação ou participe como voluntário nas ações do Instituto Patinhas Unidas.
+            </p>
+            
+            <!-- Botão que abre o Modal -->
+            <label for="modal-toggle" class="botao">Ver Detalhes da Campanha</label>
+        </section>
+
+        <!-- ESTRUTURA DO MODAL (HTML + CSS puro) -->
+        <input type="checkbox" id="modal-toggle" class="modal-checkbox">
+        <div class="modal-container">
+            <div class="modal-conteudo">
+                <label for="modal-toggle" class="modal-fechar">&times;</label>
+                <span class="badge">Ativo</span>
+                <h3>Campanha de Adoção Responsável</h3>
+                <p>Feira de adoção todos os sábados no abrigo. Venha encontrar seu companheiro!</p>
+                <a href="cadastro.html" class="botao">Quero participar</a>
+            </div>
+        </div>
+    </main>	
+
+    <!-- RODAPÉ (FOOTER EM COLUNAS) -->
+    <footer class="rodape" id="contato">
+        <div class="rodape-conteudo">
+            <!-- Coluna 1: Nome e Frase -->
+            <div class="rodape-coluna">
+                <h3>Instituto Patinhas Unidas</h3>
+                <p>Desde 2014 resgatando, cuidando e encontrando novos lares para cães e gatos em situação de vulnerabilidade.</p>
+            </div>
+
+            <!-- Coluna 2: Fale Conosco -->
+            <div class="rodape-coluna">
+                <h3>Fale conosco</h3>
+                <p class="italico">Rua Floriano Peixoto, 142 — Centro, Mogi das Cruzes/SP</p>
+                <p class="italico">(11) 99999-9999</p>
+                <p class="italico">contato@patinhasunidas.org</p>
+            </div>
+
+            <!-- Coluna 3: Atendimento -->
+            <div class="rodape-coluna">
+                <h3>Atendimento</h3>
+                <p>Segunda a sexta, 7h às 18h</p>
+                <p>Feiras de adoção: sábados, 8h às 14h</p>
+            </div>
+        </div>
+
+        <!-- Linha de Direitos Autorais -->
+        <div class="rodape-bottom">
+            <p>&copy; 2026 Instituto Patinhas Unidas. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
